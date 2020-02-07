@@ -1,5 +1,5 @@
 <?php
-namespace Ayasoftware\ColorGuide\Block\Adminhtml\Index\PaintPrice\Edit;
+namespace Rasik\Custom\Block\Adminhtml\Index\PaintPrice\Edit;
 
 use Magento\Framework\View\Element\UiComponent\Control\ButtonProviderInterface;
 
