@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Rasik_Custom" title="Rasik custom" module="Rasik_Custom" sortOrder="20" dependsOnModule="Rasik_Custom" resource="Rasik_Custom::custom"/>
+        <add id="Rasik_Custom::index" title="Pierre FAY custom" module="Rasik_Custom" action="custom/index/index" parent="Rasik_Custom" sortOrder="20" dependsOnModule="Rasik_Custom" resource="Rasik_Custom::custom"/>
+    </menu>
+</config>

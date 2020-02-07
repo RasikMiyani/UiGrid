@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="custom_data_listing_data_source" xsi:type="string">Rasik\Custom\Model\ResourceModel\Custom\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Rasik\Custom\Model\ResourceModel\Custom\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">rasik_custom</argument>
+            <argument name="eventPrefix" xsi:type="string">rasik_custom</argument>
+              <argument name="eventObject" xsi:type="string">rasik_custom_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Rasik\Custom\Model\ResourceModel\Custom</argument>
+        </arguments>
+    </virtualType>
+  
+</config>
